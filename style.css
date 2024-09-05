@@ -1,0 +1,101 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: #0a4242;
+}
+
+body {
+    min-height: 100vh;
+    padding: 2em;
+    background-color: rgb(18, 110, 113);
+    background: linear-gradient(to top right, rgb(28, 165, 117), rgb(1, 66, 101));
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+    padding: 2em;
+}
+
+.title {
+    font-family: 'Matemasie';
+    text-transform: uppercase;
+    color: rgb(63, 235, 175);
+    font-weight: 200;
+}
+
+.header-textfield {
+    font: 0.8em sans-serif;
+    width: 30vh;
+    padding: 0.75em;
+    text-align: center;
+    background-color: #98eeee;
+    border: 0;
+}
+
+.add-robot-form {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.textfield, .date {
+    font: 0.8em sans-serif;
+    width: 100%;
+    padding: 0.75em;
+    text-align: center;
+    background-color: #98eeee;
+    border: 0.3px solid black;
+    color: rgb(95, 95, 95);
+}
+
+.buttom {
+    font: 1em sans-serif;
+    width: 100%;
+    height: 40px;
+    background-color: #0a4242;
+    color:  #90c8c8;
+    padding: 0.5em;
+    border: 0;
+}
+
+.cards {
+    list-style: none;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    justify-content: center;
+}
+
+.card {
+    width: 300px;
+    height: 420px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #0ecece;
+    border-radius: 1em;
+    padding: 1em;
+    box-shadow: 0 0 5px 5px rgba(0,0,0,0.1);
+}
+
+.card:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: 1s;
+}
+
+.card__description {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding: 1em;
+}
